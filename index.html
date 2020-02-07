@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My BookList</title>
+
+    <!--Favicon Link-->
+    <link rel="icon" type="icon" href="favicons/favicon-32x32.png" sizes="32x32">
+
+    <!--Font Awesome link -->
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+
+    
+    <!-- Bootstrap CSS -->
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="wraper">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <h1 class="display-4 text-center wow fadeInDown"><i class="fa fa-book text-primary"></i> My <span class="text-primary">Book</span>List</h1>
+                    <span class="alert"></span>
+                    <form id="book-form" class=" wow fadeInLeft">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="author">Author</label>
+                            <input type="text" id="author" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="isbn">ISBN#</label>
+                            <input type="text" id="isbn" class="form-control">
+                        </div>
+                        <input type="submit" class="btn btn-primary btn-block " value="Add Book">
+                    </form>
+                    <table class="table table-striped mt-5">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Auther</th>
+                                <th>ISBN#</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="book-list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+    <!-- <div>
+    <div class="container">
+        <form action="" id="submit-form">
+            <div class="form-group">
+                <input type="text" class="form-control name" >
+                <input type="text" class="form-control email">
+                <input type="text" class="form-control password">
+                <button class="btn btn-primary btn-block" type="submit">Click</button>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody class="t-body"></tbody>
+            </table>
+        </form>
+    </div> -->
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="assets/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/popper/dist/umd/popper.js"></script>
+    <script type="text/javascript" src="assets/wayPoint/lib/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/CounterUp/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+     
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src = "app.js"></script>
+</body>
+</html>
